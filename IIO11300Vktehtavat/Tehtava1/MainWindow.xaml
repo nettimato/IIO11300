@@ -7,15 +7,17 @@
         mc:Ignorable="d"
         Title="Oy K-S Windows Ab" Height="350" Width="525" FontSize="18">
     <Grid>
-    <StackPanel Orientation="Horizontal">
-      <StackPanel Orientation="Vertical">
-        <TextBlock x:Name="tbWidht" Text="Ikkunan leveys" Height="28" Margin="10,10,10,0" />
-        <TextBox x:Name="txtWidht" Text="600" Height="28" Width="114" Margin="10,10,10,0" />
-      </StackPanel>
-      <StackPanel Orientation="Vertical">
-        <Button x:Name="btnCalculate" Content="Laske pinta-ala ja piiri" Height="32" Width="180" Click="btnCalculate_Click" Margin="10,10,10,0"/>
-        <Button x:Name="btnClose" Content="Sulje" Height="32" Width="180" Click="btnClose_Click" Margin="10,10,10,0"/>
-      </StackPanel>
-    </StackPanel>
-  </Grid>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical">
+                <TextBlock x:Name="tbWidht_Copy" Text="Ikkunan korkeus" Height="28" Margin="10,10,10,0" />
+                <TextBox x:Name="txtHeight" Text="600" Height="28" Width="114" Margin="10,10,10,0" />
+                <TextBlock x:Name="tbWidht" Text="Ikkunan leveys" Height="28" Margin="10,10,10,0" />
+                <TextBox x:Name="txtWidth" Text="600" Height="28" Width="114" Margin="10,10,10,0" />
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Button x:Name="btnCalculate" Content="Laske pinta-ala ja piiri" Height="32" Width="180" Click="btnCalculate_Click" Margin="10,10,10,0" IsEnabled="False"/>
+                <Button x:Name="btnCalculateArea00" Content="Laske  piiri" Height="32" Width="180" Click="btnCalculateArea00_Click" Margin="10,10,10,0"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
 </Window>

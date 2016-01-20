@@ -53,6 +53,20 @@ namespace Tehtava1
     {
 
     }
+    private void btnCalculateArea00_Click(object sender, RoutedEventArgs e) {
+      try {
+                JAMK.IT.IIO11300.Ikkuna ikk = new JAMK.IT.IIO11300.Ikkuna();
+                ikk.Korkeus = double.Parse(txtHeight.Text);
+                ikk.Leveys = double.Parse(txtWidth.Text);
+                //tulos käyttäjälle
+                MessageBox.Show(ikk.LaskePintaAla().ToString());
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+    }
   }
 
   public class BusinessLogicWindow
