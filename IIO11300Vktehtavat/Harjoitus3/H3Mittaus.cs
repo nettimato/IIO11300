@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,9 @@ namespace JAMK.IT.IIO11300
             get { return mittaus; }
             set { mittaus = value; }
         }
+        public string DataMuoto {
+            get { return kello + ";" + mittaus; }
+        }
         #region CONSTRUCTORS
         // luokalle tehdään kaksi konstruktoria
         public MittausData()
@@ -41,5 +45,82 @@ namespace JAMK.IT.IIO11300
         {
             return kello + ": " + mittaus;
         }
+
+        #region METHODS
+        public static void SaveDataToFile(List<MittausData> dataa, string filu)
+        {
+            // kirjoitetaan data tiedostoon ja jos tiedosto on jo olemassa, liitetään se olemassa olevaan
+            try
+            {
+                // tutkitaan onko tiedosto olemassa
+                if (!System.IO.File.Exists(filu))
+                {
+                    // luodaan uusi
+                    using (StreamWriter sw = File.CreateText(filu))
+                    {
+                        // käydään kokoelma läpi ja kirjoitetaan kukin mittausdata omalle rivilleen
+                        foreach (var item in dataa)
+                        {
+                            sw.WriteLine(item.DataMuoto);
+                        }
+                    }
+                }
+                else
+                {
+                    // lisätään olemassa olevaan tiedostoon
+                    using (StreamWriter sw = File.AppendText(filu))
+                    {
+                        foreach (var item in dataa)
+                        {
+                            sw.WriteLine(item.DataMuoto);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+        public static List<MittausData> LoadDataFromFile(string filu)
+        {
+            // luetaan käyttäjän antamasta tiedostosta rivejä ja muutetaan ne mittausdataksi
+            try
+            {
+                if (File.Exists(filu)) {
+                    using (StreamReader sr = File.OpenText(filu))
+                    {
+                        // luetaan rivi kerrallaan tiedostoa
+                        
+                        MittausData md;
+                        List<MittausData> luetut = new List<MittausData>();
+                        string rivi = "";
+                        while ((rivi = sr.ReadLine()) != null)
+                        {
+                            // tutkitaan löytyykö sovittu erotinmerkki ";" > etupuolella kellonaika ja jälkeen mittaustulos
+                            if ((rivi.Length > 3) && rivi.Contains(";"))
+                            {
+                                string[] split = rivi.Split(new char[] { ';' });
+                                // luodaan tekstinpätkistä olio
+                                md = new MittausData(split[0], split[1]);
+                                luetut.Add(md);
+                            }
+                        }
+                        // palautetaan luetut
+                        return luetut;
+                    }
+                }
+                else
+                {
+                    throw new FileNotFoundException();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
     }
 }
