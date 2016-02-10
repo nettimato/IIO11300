@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lotto", "lotto\lotto.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harjoitus3", "Harjoitus3\Harjoitus3.csproj", "{20E87965-AE50-420E-9A9C-AAB4FA529584}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harjoitus4console", "Harjoitus4console\Harjoitus4console.csproj", "{4413B518-8296-444D-BC91-B4794D7A894E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harjoitus4WPFXML", "Harjoitus4WPFXML\Harjoitus4WPFXML.csproj", "{CDCD0114-EF47-47E1-B99F-4648F71A40C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{20E87965-AE50-420E-9A9C-AAB4FA529584}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20E87965-AE50-420E-9A9C-AAB4FA529584}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20E87965-AE50-420E-9A9C-AAB4FA529584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4413B518-8296-444D-BC91-B4794D7A894E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4413B518-8296-444D-BC91-B4794D7A894E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4413B518-8296-444D-BC91-B4794D7A894E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4413B518-8296-444D-BC91-B4794D7A894E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDCD0114-EF47-47E1-B99F-4648F71A40C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDCD0114-EF47-47E1-B99F-4648F71A40C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDCD0114-EF47-47E1-B99F-4648F71A40C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDCD0114-EF47-47E1-B99F-4648F71A40C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
