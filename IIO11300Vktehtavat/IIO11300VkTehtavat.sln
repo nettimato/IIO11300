@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harjoitus4console", "Harjoi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harjoitus4WPFXML", "Harjoitus4WPFXML\Harjoitus4WPFXML.csproj", "{CDCD0114-EF47-47E1-B99F-4648F71A40C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviesXML", "MoviesXML\MoviesXML.csproj", "{FD10E263-CC3E-44ED-9AD5-5D08C51AD711}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieXMLMK2", "MovieXMLMK2\MovieXMLMK2.csproj", "{CF1966B0-A300-4D55-80C3-218F925DB962}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{CDCD0114-EF47-47E1-B99F-4648F71A40C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDCD0114-EF47-47E1-B99F-4648F71A40C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDCD0114-EF47-47E1-B99F-4648F71A40C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD10E263-CC3E-44ED-9AD5-5D08C51AD711}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD10E263-CC3E-44ED-9AD5-5D08C51AD711}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD10E263-CC3E-44ED-9AD5-5D08C51AD711}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD10E263-CC3E-44ED-9AD5-5D08C51AD711}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF1966B0-A300-4D55-80C3-218F925DB962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF1966B0-A300-4D55-80C3-218F925DB962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF1966B0-A300-4D55-80C3-218F925DB962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF1966B0-A300-4D55-80C3-218F925DB962}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
