@@ -1,11 +1,73 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace bindingDemo
 {
+    public class HockeyPlayer : INotifyPropertyChanged
+    {
+        public string name, number;
+        public string Name
+        {
+            set
+            {
+                name = value;
+                Notify("Name");
+                Notify("NameAndNumber");
+            }
+            get
+            {
+                return name;
+            }
+        }
+        public string Number
+        {
+            set
+            {
+                number = value;
+                Notify("Number");
+                Notify("NameAndNumber");
+            }
+            get
+            {
+                return number;
+            }
+        }
+        public string NameAndNumber
+        {
+            get
+            {
+                return name + " #" + number;
+            }
+        }
+        // constructor
+        public HockeyPlayer()
+        {
+
+        }
+        public HockeyPlayer(string name, string number)
+        {
+            this.name = name;
+            this.number = number;
+        }
+        // methods
+        public override string ToString()
+        {
+            return name + " #" + number;
+        }
+        // INotifyPropertyChanged members
+        public event PropertyChangedEventHandler PropertyChanged;
+        void Notify(string propName)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propName));
+            }
+        }
+    }
     public class HockeyTeam
     {
         #region PROPERTIES
@@ -27,7 +89,7 @@ namespace bindingDemo
         #endregion
         public override string ToString()
         {
-            return Name + "@" + City;
+            return Name + " @ " + City;
         }
     }
 

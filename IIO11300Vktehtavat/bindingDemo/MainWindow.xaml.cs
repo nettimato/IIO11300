@@ -62,5 +62,11 @@ namespace bindingDemo
             if (clicked < 0) clicked = 0;
             myGrid.DataContext = joukkueet[clicked];
         }
+
+        private void btnShowPlayers2_Click(object sender, RoutedEventArgs e)
+        {
+            PlayerWindow win = new PlayerWindow();
+            win.ShowDialog();
+        }
     }
 }

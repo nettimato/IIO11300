@@ -58,6 +58,7 @@
                 <TextBox x:Name="txtCity" Text="{Binding Path=City}"/>
                 <Button x:Name="btnForward" Content="Next" Click="btnForward_Click"/>
                 <Button x:Name="btnBackward" Content="Previous" Click="btnBackward_Click"/>
+                <Button x:Name="btnShowPlayers2" Content="Näytä pelaajat" Click="btnShowPlayers2_Click"/>
             </StackPanel>
         </StackPanel>
     </Grid>
