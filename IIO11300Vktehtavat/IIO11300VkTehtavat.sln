@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bindingDemo", "bindingDemo\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H7ADOConsoleDemo", "H7ADOConsoleDemo\H7ADOConsoleDemo.csproj", "{38186C74-8240-44EE-9533-C16FDC31D94E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oldbooks", "oldbooks\oldbooks.csproj", "{C9940194-7590-4234-898A-5E531D97EA10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{38186C74-8240-44EE-9533-C16FDC31D94E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38186C74-8240-44EE-9533-C16FDC31D94E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38186C74-8240-44EE-9533-C16FDC31D94E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9940194-7590-4234-898A-5E531D97EA10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9940194-7590-4234-898A-5E531D97EA10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9940194-7590-4234-898A-5E531D97EA10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9940194-7590-4234-898A-5E531D97EA10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
