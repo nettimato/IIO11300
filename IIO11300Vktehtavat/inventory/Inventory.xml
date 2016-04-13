@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Items>
+  <Item Name="Ledivalo" Amount="1" Description="Kokoonsa nähden tehokas valonlähde." QuestRelated="False" Image="http://orig10.deviantart.net/ca70/f/2016/103/7/7/aim_led_by_nettimato-d9yuzd4.png" />
+  <Item Name="Bensakanisteri" Amount="1" Description="Sisältää ysivitosta." QuestRelated="True" Image="http://orig11.deviantart.net/571a/f/2016/103/d/f/case_gascan_by_nettimato-d9yuzed.png" />
+  <Item Name="Kumisaapas" Amount="2" Description="Hyödyllinen kostealla kelillä. Haisee pahalle, tosin." QuestRelated="False" Image="http://orig01.deviantart.net/a52b/f/2016/103/0/1/case_rubberboot_by_nettimato-d9yuze9.png" />
+  <Item Name="Mustekynä" Amount="7" Description="Sitä ei voi kumittaa." QuestRelated="False" Image="http://orig13.deviantart.net/7f33/f/2016/103/c/e/op_pen_by_nettimato-d9yuzdi.png" />
+  <Item Name="Kuumailmapallo" Amount="1" Description="Tämä mahtuu taskuun." QuestRelated="True" Image="http://1.bp.blogspot.com/-2LhgzPHvPIA/UjWS6jWbY7I/AAAAAAAACeY/4j9VD90K4eQ/s1600/Kuumailmapallo.JPG" />
+</Items>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:inventory"
         mc:Ignorable="d"
-        Title="Inventory" Height="350" Width="550">
+        Title="Inventory" Height="365" Width="550">
     <Window.Resources>
         <DataTemplate x:Key="itemName">
             <StackPanel>
@@ -19,7 +19,7 @@
     </Window.Resources>
     <Grid>
         <Grid.DataContext>
-            <XmlDataProvider x:Name="xdpItems" Source="D:\\H8374\inventory.xml" XPath="/Items/Item"/>
+            <XmlDataProvider x:Name="xdpItems" Source="D:\Inventory.xml" XPath="/Items/Item"/>
         </Grid.DataContext>
         <StackPanel Orientation="Horizontal">
             <!-- Vasemmanpuoleisessa stackpanelissa elokuvien nimet -->
@@ -33,7 +33,7 @@
                 <TextBlock Text="Nimi"/>
                 <TextBox x:Name="txtName" Text="{Binding XPath=@Name}" Style="{StaticResource MyStyle}" />
                 <TextBlock Text="Kuvaus"/>
-                <TextBox x:Name="txtDesc" Text="{Binding XPath=@Description}" Style="{StaticResource MyStyle}" MaxLines="4" TextWrapping="Wrap" MaxHeight="76" />
+                <TextBox x:Name="txtDesc" Text="{Binding XPath=@Description}" Style="{StaticResource MyStyle}" MaxLines="3" TextWrapping="Wrap" MaxHeight="57" />
                 <TextBlock Text="Lukumäärä"/>
                 <TextBox x:Name="txtAmount" Text="{Binding XPath=@Amount}" Style="{StaticResource MyStyle}" Width="30" HorizontalAlignment="Left" />
                 <TextBlock Text="Liittyy tehtävään"/>
@@ -43,9 +43,11 @@
                 <Button x:Name="btnSave" Content="Tallenna muutokset" FontSize="16" Click="btnSave_Click"/>
                 <TextBlock Text="Kuva"/>
                 <TextBox x:Name="txtImage" Text="{Binding XPath=@Image}" Style="{StaticResource MyStyle}" />
+                <Button x:Name="btnRefresh" Content="Päivitä kuva" FontSize="16" Click="btnRefresh_Click"/>
             </StackPanel>
             <StackPanel Margin="10,10,10,10">
-                <Image Width="200" Height="200" x:Name="imgPreview" Source="{Binding XPath=@Image}" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Image Width="200" Height="200" x:Name="imgPreview" Source="{Binding XPath=@Image}" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <!--Stretch="UniformToFill"-->
             </StackPanel>
         </StackPanel>
     </Grid>

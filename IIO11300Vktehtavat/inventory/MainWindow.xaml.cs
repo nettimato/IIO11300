@@ -24,6 +24,27 @@ namespace inventory
         public MainWindow()
         {
             InitializeComponent();
+            makeFilee();
+        }
+
+        private void makeFilee()
+        {
+            try
+            {
+                string filu = xdpItems.Source.LocalPath;
+                if (System.IO.File.Exists(filu))
+                {
+                    // nothing
+                }
+                else {
+                    // todo
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
@@ -112,6 +133,11 @@ namespace inventory
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnRefresh_Click(object sender, RoutedEventArgs e)
+        {
+            // nothing :D
         }
     }
 }
